@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>GAMES</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/globalStyle.css">
+  <link rel="stylesheet" href="../css/gamesStyle.css">
+  <script src="https://kit.fontawesome.com/81d6042b25.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- NAVBAR======================================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <!-- NAV BRAND -->
+    <a class="navbar-brand" href="../index.html"><i class="fas fa-flask"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto mr-4">
+        <!-- HOME -->
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html"><i class="fas fa-home navIcon"></i></a>
+        </li>
+        <!-- SHOPPING -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-shopping-cart navIcon"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">GAMES</a>
+            <a class="dropdown-item" href="#">ELECTRONICS</a>
+            <a class="dropdown-item" href="#">BOOKS</a>
+            <a class="dropdown-item" href="#">ANIME</a>
+          </div>
+        </li>
+        <!-- CONTACT -->
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-phone navIcon"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- img slider ========================================================== -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!--slider elements-->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../img/last.jpg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>THE LAST OF US PART 2</h4>
+          <h6>award winner for the most anticipated game 2014</h6>
+          <p>the last of us is an action adventure game that takes place in a world of horrifying zombies and hostile humans</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../img/GOW.jpg" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>GOD OF WAR</h4>
+          <h6>Game of the year 2018</h6>
+          <h6>Best studio 2018 - and 7 more awards -</h6>
+          <p>Play as Kratos the god of war in his task to fulfill his wife's last wish in an epic journey through the 7 realms</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../img/uncharted.jpg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>UNCHARTED 4</h4>
+          <h6>- Empire award - best video game 2017</h6>
+          <p>play the game as nathan drake a fromer tresure hunter coaxed by his brother to search for Henry Avery's long lost tresure</p>
+        </div>
+      </div>
+    </div>
+    <!--slider controls (indicator)-->
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <!--slider controls (buttons)-->
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- body ===================================================-->
+  <div class="container-fluid">
+    <div class="gamesContainer">
+      <!-- shopping list 1(on sale) =========-->
+      <div class="row gamesRow">
+        <h4 class="Header">ON SALE</h4>
+      </div>
+      <hr>
+      <div id="list1" class="carousel slide" data-ride="carousel">
+        <!--slider elements-->
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <!--slide 1-->
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/codbo.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">CALL OF DUTY BLACK OPS</h3>
+                      <p class="card-text">its an action FPS that has many parts that takes you in an epic shooting journey of drama and world wars</p>
+                      <button type="button" class="btn btn-dark mr-auto d-inline-flex">Add to cart</button>
+                      <button type="button" class="btn btn-primary ml-auto d-inline-flex">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/ACorigins.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">ASSASIN'S CREED ORIGINS</h3>
+                      <p class="card-text">its a 3rd person view game with the classic AC gameplay that has great sword battles , the game takes place in egypt as bayek tries to take revenge from his son killers</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/destiny.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">DESTINY</h3>
+                      <p class="card-text">Destiny takes place in space in the far future with laser shooting fps style </p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="carousel-item">
+            <!--slide 2-->
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/SC.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">SHADOW OF THE COLOUSSUS</h3>
+                      <p class="card-text">giants and golems are your enemys as you advance in a unique story of the relentless hero</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/uncharted.jpeg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">UNCHARTED 4</h3>
+                      <p class="card-text">play as the famous treasure hunter nathan drake in his last mission that brought him back from retirment</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/unity.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">ASSASIN'S CREED UNITY</h3>
+                      <p class="card-text">one of the greatest parts of assasin's creed of all time is unity which takes place in the french revoulution you play as the hidden hero to free all of france from the enslavement</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--slide 3-->
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/zelda.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">ZELDA BREATH OF THE WILD</h3>
+                      <p class="card-text">Breath of the Wild is set at the end of the Zelda timeline; the player controls Link, who awakens from a hundred-year slumber to defeat Calamity Ganon before it can destroy the kingdom of Hyrule. ... Breath of the Wild was a launch game for the Switch and the final game published by Nintendo for the Wii U</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/hff.png">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">HUMAN FALL FLAT</h3>
+                      <p class="card-text">play with your friends or chill alone HFF is a puzzle game with cool physics that can make a free time a ton of fun</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/home.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">HOME SWEET HOME</h3>
+                      <p class="card-text">Home Sweet Home is a single-player, first-person survival/horror/puzzle video game. It was developed by Thai developer Yggdrazil Group. The game features horror elements drawn from Thai folklore. ... Players have to discover the mystery in Tim's house and find his missing wife Jane.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--slider controls (indicator)-->
+        <ol class="carousel-indicators">
+          <li data-target="#list1" data-slide-to="0" class="active"></li>
+          <li data-target="#list1" data-slide-to="1"></li>
+          <li data-target="#list1" data-slide-to="2"></li>
+        </ol>
+        <!--slider controls (buttons)-->
+        <a class="carousel-control-prev" href="#list1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#list1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- second list ========================-->
+      <hr>
+      <div class="row gamesRow">
+        <h4 class="Header">NEW</h4>
+      </div>
+      <hr>
+      <div id="list2" class="carousel slide" data-ride="carousel">
+        <!--slider elements-->
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <!--slide 1-->
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/codbo4.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">CALL OF DUTY BLACK OPS 4</h3>
+                      <p class="card-text">Black Ops 4 is the first Call of Duty title without a traditional single-player campaign mode. Instead, it features the Solo Missions mode, which focuses on the backstories of the game's multiplayer characters, known as "Specialists". The missions take place between Black Ops II and III chronologically.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/destiny.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">DESTINY</h3>
+                      <p class="card-text">Destiny's story. The story of Destiny starts just after the 'Golden Age' of technological advancement. This is roughly around 700 years in the future where peace has spread across our solar system. ... Not all is rosy however, as the Traveler (through no fault of its own) also lured The Darkness to the solar system.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/ir.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">IGNITE RAGE</h3>
+                      <p class="card-text">ignite rage is a game about an angry man lost his kid to a car accident and is on a mission to avenge him</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--slide 2-->
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/ab.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">ANGRY BIRDS STAR WARS II</h3>
+                      <p class="card-text">take a trip with our beloved birds in a task to retrieve their children and kill the pigs</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/asr.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">ASSASSIN'S CREED REVELATIONS</h3>
+                      <p class="card-text">Assassin's Creed: Revelations is a 2011 action-adventure video game developed by Ubisoft Montreal and published by Ubisoft. ... The main story follows the Assassin Ezio's journey to unlock the secret of Altaïr's vault in Masyaf using disc-like artifacts containing Altaïr's memories.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/aw.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">ALAN WAKE</h3>
+                      <p class="card-text">The story follows best-selling thriller novelist Alan Wake as he tries to uncover the mystery behind his wife's disappearance during a vacation in the small fictional town of Bright Falls, Washington, all while experiencing events from the plot in his latest novel, which he cannot remember writing, coming to life.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--slide 3-->
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/bd.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">BLACK DESERT</h3>
+                      <p class="card-text">Black Desert Online takes place in a high fantasy setting and revolves around the conflict between two rival nations, the Republic of Calpheon and the Kingdom of Valencia. Calpheon is very materialistic whereas Valencia is very spiritual.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/bf.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">BROFORCE</h3>
+                      <p class="card-text">When evil threatens the world, the world calls in Broforce - an under-funded, over-powered paramilitary organization dealing exclusively in excessive force. Brace your loins with up to four players to run 'n' gun as dozens of different bros and eliminate the opposing terrorist forces that threaten our way of life.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/bf4.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">BATTLEFIELD 4</h3>
+                      <p class="card-text">Battlefield 4 campaign details have been announced by DICE. According to the storyline, the world is chaotic and China is “the tinderbox.” You, as Sergeant Daniel Recker, along with your elite Tombstone squad will need to “navigate the turmoil around you as you fight to save the final hope for peace.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--slider controls (indicator)-->
+        <ol class="carousel-indicators">
+          <li data-target="#list2" data-slide-to="0" class="active"></li>
+          <li data-target="#list2" data-slide-to="1"></li>
+          <li data-target="#list2" data-slide-to="2"></li>
+        </ol>
+        <!--slider controls (buttons)-->
+        <a class="carousel-control-prev" href="list2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#list2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- third list ==============================================-->
+      <hr>
+      <div class="row gamesRow">
+        <h4 class="Header">BEST SELLERS</h4>
+      </div>
+      <hr>
+      <div id="list3" class="carousel slide" data-ride="carousel">
+        <!--slider elements-->
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <!--slide 1-->
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/dl.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">DYING LIGHT 2</h3>
+                      <p class="card-text">Dying Light 2 is an open-world action game set in an isolated urban landscape during the zombie apocalypse. You play as Aiden Caldwell, a freelance runner who handles various odd jobs and tasks for the citizens of The City, one of the last human settlements in Europe.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/dl1.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">DYING LIGHT</h3>
+                      <p class="card-text">Dying Light is an open world first person survival horror action-adventure video game developed by the Polish game studio Techland and published by Warner Bros. Interactive Entertainment. ... The game revolves around an undercover agent named Kyle Crane who is sent to infiltrate a quarantine zone in a city called Harran.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/kurtzpel.png">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">KURTZPEL</h3>
+                      <p class="card-text">MMO RPG with one of the greatest fighting mechanics ever</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--slide 2-->
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/fo.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">FALLOUT</h3>
+                      <p class="card-text">Premise. Fallout is a narrative prequel to previous Fallout games. It is set in an alternate history, and takes place in 2102, twenty-five years after a nuclear war that devastated the Earth.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/gta.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">GRAND THEFT AUTO V</h3>
+                      <p class="card-text">Los Santos: a sprawling sun-soaked metropolis full of self-help gurus, starlets and fading celebrities, once the envy of the Western world, now struggling to stay afloat in an era of economic uncertainty and cheap reality TV.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/wow.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">WORLD OF WARCRAFT</h3>
+                      <p class="card-text">World of Warcraft (WoW) is a massively multiplayer online role-playing game (MMORPG) ... It is through quests that much of the game's story is told, both through the quest's text and through scripted NPC actions.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--slide 3-->
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/mc.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">MINECRAFT</h3>
+                      <p class="card-text">Minecraft is a sandbox video game originally created by Markus "Notch" Persson, maintained by Mojang AB, part of Xbox Game Studios, which in turn is part of Microsoft.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/mp3.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">MAX PAYNE 3</h3>
+                      <p class="card-text">The story of Max Payne 3 starts off with Max eight years after the events of Max Payne 2, where he no longer carries an NYPD badge and becomes a drunk, addicted to painkillers (the series' source of health). From there, Max leaves New York and becomes a private security consultant in the city of San Paolo, Brazil</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/rl.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">RELIC KNIGHTS</h3>
+                      <p class="card-text">A brand new science fiction miniatures game full of over the top anime action!</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--slider controls (indicator)-->
+        <ol class="carousel-indicators">
+          <li data-target="#list3" data-slide-to="0" class="active"></li>
+          <li data-target="#list3" data-slide-to="1"></li>
+          <li data-target="#list3" data-slide-to="2"></li>
+        </ol>
+        <!--slider controls (buttons)-->
+        <a class="carousel-control-prev" href="#list3" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#list3" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!--fourth list==============================================-->
+      <hr>
+      <div class="row gamesRow">
+        <h4 class="Header">FREE</h4>
+      </div>
+      <hr>
+      <div id="list4" class="carousel slide" data-ride="carousel">
+        <!--slider elements-->
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <!--slide 1-->
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/dec.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">DECEIT</h3>
+                      <p class="card-text">Though the journey from London has worn me through to my bones I still felt a thrill of excitement sweep over me as we approached Alexandra Asylum's gates. Maton Joan was right, it's an imposing gloomy affair but amongst the rugged landscape of Skye it's a minor blight that I can tolerate. The Matron also bent my ear with other rumours that supposedly escape this place, but I won't pay any heed to her, she always was one to rabbit.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/gw.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">GEARS OF WAR</h3>
+                      <p class="card-text">But scrape away the surface and the underlying Gears of War story is the tale of a civilization on the brink of extinction. It explores the relationships between friends and brothers, fathers and sons, and what the human race would do to survive when faced with the end of the world.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/nsuns4.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">NARUTO SHIPPUDEN ULTIMATE NINJA STORM 4</h3>
+                      <p class="card-text">The story mode of Naruto Shippuden: Ultimate Ninja Storm 4 follows the conclusion of the Naruto Shippuden series. Here you play through chapters of the story from the anime series. There are cutscenes in-between battles with interactive cutscenes and quicktime at certain points</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--slide 2-->
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/lol.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">LEAGUE OF LEGENDS</h3>
+                      <p class="card-text">League of legends is an mmo rpg played in a 5v5 map called summoner's rift , choose a champion from 140+ champions to play with him to glory as you climb the ranked ladder to acheive greatness</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/fort.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">FORTNITE</h3>
+                      <p class="card-text">trash game i just needed more posters</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/sk.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">shovel knight</h3>
+                      <p class="card-text">The campaign was originally named just Shovel Knight, but was renamed after the release of Treasure Trove. This main story features Shovel Knight on his quest to rescue his lost partner Shield Knight from the Tower of Fate. To do so, he must defeat the Enchantress, protected by her Order of No Quarter.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--slide 3-->
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/sd2.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">STATE OF DECAY 2</h3>
+                      <p class="card-text">State of Decay 2 is a horror survival game sequel to State of Decay developed by Undead Labs and published by Microsoft Game Studios. It released on May 22nd, 2018 for both Xbox One and PC, with an early release date of May 18th for owners of the game's Ultimate Edition. State of Decay 2 offers a vast open world game divided into three different maps, each with its own setting and locations. The player assumes the role of a procedurally generated character</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/kurtzpel.png">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">KURTZPEL</h3>
+                      <p class="card-text">your typical mmo rpg endless grind</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card card-flip">
+                  <div class="card-front text-white bg-dark">
+                    <img class="d-inline gameElement" src="../img/posters/fo.jpg">
+                  </div>
+                  <div class="card-back bg-white">
+                    <div class="card-body">
+                      <h3 class="card-title">Back</h3>
+                      <p class="card-text">The story picks up thirty years after the setting of Fallout 2 and 200 years after the nuclear war that devastated the game's world. The player-character is a Vault dweller in Vault 101 who is forced to flee when the Overseer tries to arrest them in response to their father leaving the Vault.</p>
+                      <button type="button" class="btn btn-dark d-inline-flex mt-1">Add to cart</button>
+                      <button type="button" class="btn btn-primary d-inline-flex mt-1">Buy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--slider controls (indicator)-->
+        <ol class="carousel-indicators">
+          <li data-target="#list4" data-slide-to="0" class="active"></li>
+          <li data-target="#list4" data-slide-to="1"></li>
+          <li data-target="#list4" data-slide-to="2"></li>
+        </ol>
+        <!--slider controls (buttons)-->
+        <a class="carousel-control-prev" href="#list4" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#list4" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid footer">
+    <p>footer</p>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>PHONES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.min.css">
+    <link rel="stylesheet" href="5th.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        function signing() {
+            alert("SIGNED SUCCESSFUL")
+        }
+    </script>
+</head>
+
+<body>
+    <!--navbar start**********************-->
+    <nav class="navbar col-12  navbar-expand-lg navbar-dark bg-dark">
+        <!--navbar brand-->
+        <a data-aos="fade-right" class="navbar-brand" href="../index.html"><strong>TECH LAP<i class="fas fa-flask"></i></strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--navbar home button start-->
+                <li class="nav-item active">
+                    <a data-aos="fade-down" class="nav-link" href="../index.html">Home<i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+                </li>
+                <!--navbar home button end-->
+                <!--navbar sign in button start-->
+                <li class="nav-item active">
+                    <a data-aos="fade-down" data-toggle="modal" data-target="#signin-form" class="nav-link" href="#">Sign Up<i class="fas fa-user"></i></a>
+                    <!--sign in form start-->
+                    <div class="modal" id="signin-form">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">SIGN UP<i class="fas fa-user"></i></h4>
+                                    <button style="color: red" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form>
+                                        <!--email-->
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <!--password-->
+                                            <div class="form-group col-md-6">
+                                                <label for="inputPassword4">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                        </div>
+                                        <!--address start-->
+                                        <div class="form-group">
+                                            <label for="inputAddress">Address</label>
+                                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="inputAddress2">Address 2</label>
+                                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                        </div>
+                                        <!--address end-->
+                                        <div class="form-row">
+                                            <!--countery option in the form-->
+                                            <div class="form-group col-md-6">
+                                                <label for="inputCity">Country</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <!--state option in the form-->
+                                            <div class="form-group col-md-4">
+                                                <label for="inputState">State</label>
+                                                <select id="inputState" class="form-control">
+                                              <option selected>Cairo</option>
+                                               <option>GIZA</option>
+                                            <option>الجيزة</option>
+                                            <option>الإسكندرية</option>
+                                        </select>
+                                            </div>
+                                            <!--state option in the form end-->
+                                            <!--zip code in the form-->
+                                            <div class="form-group col-md-2">
+                                                <label for="inputZip">Zip</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <!--check me button-->
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck"> Remember Me  </label>
+                                            </div>
+                                            <!--check me button end-->
+                                        </div>
+                                        <!--sign in button w mogod feh onclick de 3shan b3d ma ydos 3la sign in yzhr signed in success we el javascript bta3ha a5r haga fe el hed-->
+                                        <button type="submit" data-dismiss="modal" onclick="signing()" class="btn btn-primary">Sign Up</button>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--sign form ends-->
+
+
+                    <!--navbar sign in button end-->
+                    <!--dropdown&categories section start-->
+                    <li class="nav-item active dropdown">
+                        <a data-aos="fade-down" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  Categories<i class="fas fa-store"></i>  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../games/games/games.html">GAMES<i class="fas fa-gamepad"></i></a>
+                            <a class="dropdown-item" href="../laptops/laptops.html">LAPTOPS<i class="fas fa-laptop"></i></a>
+                            <a class="dropdown-item" href="../monitors/tv.html">MONITORS<i class="fas fa-tv"></i></a>
+                        </div>
+                    </li>
+                    <!--dropdown&categories section end-->
+                    <li class="nav-item active dropdown">
+                        <a data-aos="fade-down" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Phone Brands<i class="fas fa-store"></i>  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="SAMSUNG.html">SAMSUNG<i class="fas fa-gamepad"></i></a>
+                            <a class="dropdown-item" href="apple.html">APPLE<i class="fas fa-laptop"></i></a>
+                            <a class="dropdown-item" href="oppo.html">OPPO<i class="fas fa-mobile-alt"></i></a>
+                        </div>
+                    </li>
+                    <!--crat item start-->
+                    <li class="nav-item active">
+                        <a data-aos="fade-down" class="nav-link" href="#">Crat<i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <!--crat item end-->
+
+            </ul>
+            <!--nav search start-->
+            <form data-aos="zoom-in" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <!--nav search end-->
+        </div>
+    </nav>
+    <!--navbar end**********************-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!--slider elements-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/gettyimages-695831248-2048x2048.jpg" alt="First slide" height="700px">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Mobiles</h4>
+                    <h5>On TechLab you can find what you are searching about with best prices</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/48.jpg" alt="Second slide" height="700px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Mobiles</h4>
+                    <h5>TechLab gives aguarantee for 5 years with all it’s electronic devices</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/50.jpg" alt="Third slide" height="700px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Mobiles</h4>
+                    <h5>TechLab has the best offer for all new clients</h5>
+                </div>
+            </div>
+        </div>
+        <!--slider controls (indicator)-->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <!--slider controls (buttons)-->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container">
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="row"><span class="badge">NEW</span></div>
+        <br>
+        <div class="row">
+            <div id="PIC1" class="col-md-6 col-sm-12 col-lg-3" data-aos="fade-right"></div>
+            <div class="col-md-6 col-sm-12 col-lg-3" data-aos="fade-left">
+                <h5>HUAWEI</h5>
+                <h6>FullHD screen with 15 inch and USP port and WAFI</h6>
+                <h6>price:3500EL</h6>
+                <button class="btn">BuyNOW</button>
+            </div>
+            <div id="pic2" class="col-md-6 col-sm-12 col-lg-3" data-aos="fade-right"></div>
+            <div class="col-md-3 col-sm-4 col-lg-3" data-aos="fade-left">
+                <h5>APPLE</h5>
+                <h6>FullHD TV with 15 inch and USP port and WAFI</h6>
+                <h6>price:7500EL</h6>
+                <button class="btn">BuyNOW</button>
+            </div>
+            <div id="pic3" class="col-md-6 col-sm-12 col-lg-3" data-aos="fade-right"></div>
+            <div class="col-md-6 col-sm-12 col-lg-3" data-aos="fade-left">
+                <h5>samsung</h5>
+                <h6>FullHD TV with 15 inch and USP port and WAFI</h6>
+                <h6>price:7500EL</h6>
+                <button class="btn">BuyNOW</button>
+            </div>
+            <div id="pic4" class="col-md-6 col-sm-12 col-lg-3" data-aos="fade-right"></div>
+            <div class="col-md-6 col-sm-12 col-lg-3" data-aos="fade-left">
+                <h5>OPPO</h5>
+                <h6>FullHD TV with 15 inch and USP port and WAFI</h6>
+                <h6>price:7500EL</h6>
+                <button class="btn">BuyNOW</button>
+            </div>
+
+        </div>
+        <hr>
+
+        <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" class="row"><span class="badge">BEST OFFERS</span></div>
+        <br>
+        <div class="row">
+            <div id="pic9" class="col-lg-3 col-sm-12 col-md-6  " data-aos="fade-right"></div>
+            <div class="col-lg-3 col-sm-12 col-md-6 " data-aos="fade-left">
+                <h5>samsung</h5>
+                <h6>FullHD TV with 15 inch and USP port and WAFI</h6>
+                <h6>price:7500EL</h6>
+                <button class="btn">BuyNOW</button>
+            </div>
+            <div id="pic10" class="col-lg-3 col-sm-12 col-md-6   " data-aos="fade-right"></div>
+            <div class="col-lg-3 col-sm-12 col-md-6 " data-aos="fade-left">
+                <h5>samsung</h5>
+                <h6>FullHD TV with 55 inch and USP port and WAFI</h6>
+                <h6>price:7500EL</h6>
+                <button class="btn">BuyNOW</button>
+            </div>
+            <div id="pic11" class="col-lg-3 col-sm-12 col-md-6  " data-aos="fade-right"></div>
+            <div class="col-lg-3 col-sm-4" data-aos="fade-left">
+                <h5>samsung</h5>
+                <h6>FullHD TV with 55 inch and USP port and WAFI</h6>
+                <h6>price:7500EL</h6>
+                <button class="btn">BuyNOW</button>
+            </div>
+            <div id="pic12" class="col-lg-3 col-sm-12 col-md-6  " data-aos="fade-right"></div>
+            <div class="col-lg-3 col-sm-12 col-md-6 " data-aos="fade-left">
+                <h5>samsung</h5>
+                <h6>FullHD TV with 55 inch and USP port and WAFI</h6>
+                <h6>price:7500EL</h6>
+                <button class="btn">BuyNOW</button>
+            </div>
+        </div>
+        <br>
+        <hr>
+
+    </div>
+    <!--slider images -->
+    <div class="container" style="left: 60px; position: relative;">
+        <div class="row">
+            <div class="col-md-4" style="top: 50px;">
+                <a href="samsung.html"><img src="img/logo.png" width="150px;" height="120px;" class="rounded"></a>
+            </div>
+            <div class="col-md-4" style="top: 50px;">
+                <a href="apple.html"><img src="img/images.jpg" class="rounded-circle" width="160px;" height="140px;"></a>
+            </div>
+            <div class="col-md-4" style="top: 50px;">
+                <a href="oppo.html"><img src="img/51.png" class="" width="150px;" height="120px;"></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!--footer section (feed back form)-->
+    <section class="col-12" id="footer">
+        <form>
+            <div class=" border-primary rounded-0">
+                <!--form header-->
+                <div class="card-header p-0">
+                    <div class="bg-info text-white text-center py-2">
+                        <h3><i class="fa fa-envelope"></i>CONTACT US</h3>
+                        <p class="m-0">TELL US YOUR FEED BACK
+                    </div>
+                </div>
+                <div class="card-body p-3">
+
+                    <!--Body-->
+                    <div class="form-group">
+                        <!--name-->
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Enter Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!--email-->
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                            </div>
+                            <input type="email" class="form-control" name="email" placeholder="example@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!--feed back-->
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                            </div>
+                            <textarea class="form-control" placeholder="Write your feed back" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <input type="submit" value="SEND" class="btn btn-info  rounded-0 py-2">
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

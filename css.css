@@ -1,0 +1,108 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    width: 100%;
+}
+
+
+/*slider imgs*/
+
+.slider-img {
+    height: 415px;
+}
+
+
+/*button style*/
+
+.btn-info {
+    margin: 20px;
+    transition: all(1s);
+    width: 150px;
+    height: 50px;
+    padding: 1rem, 2rem;
+    margin-left: 50px;
+}
+
+.btn-text {
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: translatey(10px);
+    transition: 0.5s;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.add-crat:hover {
+    background-color: black;
+}
+
+.games-section {
+    background-image: url(imges/games-section.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.game-img {
+    height: 300px;
+}
+
+.laptops-section {
+    background-image: url(imges/laptop-section.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.phones-section {
+    background-image: url(imges/phone-section1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.monitors-section {
+    background-image: url(imges/monitor-section1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+.sec-btn {
+    background-color: black;
+}
+
+.sec-btn:hover {
+    background-color: rgb(46, 44, 44);
+}
+
+.phone-img {
+    height: 320px;
+}
+
+.monitor-img {
+    height: 230px;
+}
+
+#footer {
+    margin: 0px;
+    background-color: rgb(43, 43, 43);
+}

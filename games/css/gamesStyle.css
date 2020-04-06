@@ -1,0 +1,59 @@
+/*global setup*/
+*{
+  margin:0 ;
+  padding: 0;
+}
+/*the outer border that contains all games*/
+.gamesContainer{
+  margin:0;
+  padding: 0;
+  margin-top: 5px;
+  border: 2px solid #04040C;
+}
+.Header{
+  margin-top: 15px;
+  padding: 10px 30px;
+  color: #202833;
+  background-color: #69FBF1;
+  text-align: center;
+  border: 2px solid #04040C;
+  margin-left:100px;
+}
+hr{
+  background-color: #C5C6C8;
+  height: 1.5px;
+}
+/*games styling*/
+.gameElement{
+  width: 100%;
+  border-radius: 3px;
+}
+
+/* card style===================*/
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+/*flipping animation*/
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}

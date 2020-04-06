@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TECH LAP</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="laptop-css.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico&display=swap" rel="stylesheet">
+    <script src="../fontawesome/js/all.js"></script>
+    <!--sign in button action in form-->
+    <script>
+        function signing() {
+            alert("SIGNED SUCCESSFUL")
+        }
+
+        function addcrat() {
+            alert("added to crat")
+        }
+    </script>
+
+</head>
+
+<body>
+    <!--navbar start**********************-->
+    <nav class="navbar col-12  navbar-expand-lg navbar-dark bg-dark">
+        <!--navbar brand-->
+        <a data-aos="fade-right" class="navbar-brand" href="../index.html"><strong>TECH LAP<i class="fas fa-flask"></i></strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!--navbar home button start-->
+                <li class="nav-item active">
+                    <a data-aos="fade-down" class="nav-link" href="../index.html">Home<i class="fas fa-home"></i> <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <!--navbar home button end-->
+                <!--navbar sign in button start-->
+                <li class="nav-item active">
+                    <a data-aos="fade-down" data-toggle="modal" data-target="#signin-form" class="nav-link" href="#">Sign Up<i class="fas fa-user"></i></a>
+                    <!--sign in form start-->
+                    <div class="modal" id="signin-form">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">SIGN UP<i class="fas fa-user"></i></h4>
+                                    <button style="color: red" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <form>
+                                        <!--email-->
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="inputEmail4">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <!--password-->
+                                            <div class="form-group col-md-6">
+                                                <label for="inputPassword4">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                        </div>
+                                        <!--address start-->
+                                        <div class="form-group">
+                                            <label for="inputAddress">Address</label>
+                                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="inputAddress2">Address 2</label>
+                                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                        </div>
+                                        <!--address end-->
+                                        <div class="form-row">
+                                            <!--countery option in the form-->
+                                            <div class="form-group col-md-6">
+                                                <label for="inputCity">Country</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <!--state option in the form-->
+                                            <div class="form-group col-md-4">
+                                                <label for="inputState">State</label>
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Cairo</option>
+                                                    <option>GIZA</option>
+                                                    <option>الجيزة</option>
+                                                    <option>الإسكندرية</option>
+                                                </select>
+                                            </div>
+                                            <!--state option in the form end-->
+                                            <!--zip code in the form-->
+                                            <div class="form-group col-md-2">
+                                                <label for="inputZip">Zip</label>
+                                                <input type="text" class="form-control" id="inputZip">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <!--check me button-->
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck"> Remember Me </label>
+                                            </div>
+                                            <!--check me button end-->
+                                        </div>
+                                        <!--sign in button w mogod feh onclick de 3shan b3d ma ydos 3la sign in yzhr signed in success we el javascript bta3ha a5r haga fe el hed-->
+                                        <button type="submit" data-dismiss="modal" onclick="signing()" class="btn btn-primary">Sign Up</button>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--sign form ends-->
+
+
+                    <!--navbar sign in button end-->
+                    <!--dropdown&categories section start-->
+                    <!--Categories --------------------------------------------------------------------------->
+                    <li class="nav-item active dropdown">
+                        <a data-aos="fade-down" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Categories<i
+                            class="fas fa-store"></i> </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!--hamed-->
+                            <a class="dropdown-item" href="../games/games/games.html">GAMES<i class="fas fa-gamepad"></i></a>
+                            <!--sara-->
+                            <a class="dropdown-item" href="../3rd%20project/phone-home.html">PHONES<i class="fas fa-mobile-alt"></i></a>
+                            <!--shada-->
+                            <a class="dropdown-item" href="../monitors/tv.html">MONITORS<i class="fas fa-tv"></i></a>
+                        </div>
+                    </li>
+                    <!--Categories --------------------------------------------------------------------------->
+                    <!--dropdown&categories section end-->
+                    <!--crat item start-->
+                    <li class="nav-item active">
+                        <a data-aos="fade-down" class="nav-link" href="#">Crat<i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <!--crat item end-->
+
+            </ul>
+            <!--nav search start-->
+            <form data-aos="zoom-in" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <!--nav search end-->
+        </div>
+        <!--nav search end-->
+        </div>
+    </nav>
+    <!--navbar end**********************-->
+
+
+    <div id="carouselExampleCaptions" class=" carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner col-">
+            <div class="carousel-item active">
+                <img class="slider-img w-100" src="imges/slider-img/lap1.jpg" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>BEST SALLS</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="slider-img w-100" src="imges/slider-img/lap2.jpg" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>ALL BRANDS</h5>
+                </div>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--HP section start-->
+
+    <div class="sec-btn">
+        <button type="button" class="btn btn-dark"><span class="btn-text">HP</button>
+    </div>
+
+    <section class="hp-section">
+        <div class="container">
+            <div class="row">
+                <div data-aos="flip-right" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-hp1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HP 2019 14" Laptop</h5>
+                            <h6><strong>Price:</strong>$420.00</h6>
+                            <p class="card-text">Intel Core i3 - 8GB Memory - 128GB Solid State Drive - Ash Silver Keyboard Frame (14-CF0014DX) </p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-sm-5 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-hp2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">New HP 15.6"</h5>
+                            <h6><strong>Price:</strong>$599.99</h6>
+                            <p class="card-text">15.6" HD Touchscreen Laptop Intel Core i3-1005G1 8GB DDR4 RAM 128GB SSD HDMI Bluetooth 802.11</p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-right" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-hp3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HP 14" Touchscreen</h5>
+                            <h6><strong>Price:</strong>$389.00</h6>
+                            <p class="card-text">HP 14" Touchscreen Home and Business Laptop Ryzen 3-3200U, 8GB RAM, 128GB M.2 SSD, Dual-Core up to 3.50 GHz, Vega 3</p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-hp4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HP Stream 11-Inch Laptop</h5>
+                            <h6><strong>Price:</strong>$179.99</h6>
+                            <p class="card-text">Intel X5-E8000 Processor, 4 GB RAM, 32 GB eMMC, Windows 10 Home in S Mode with Office 365 Personal </p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-hp5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">HP 15.6" HD 2019 New</h5>
+                            <h6><strong>Price:</strong>$455.00</h6>
+                            <p class="card-text">Touch-Screen Laptop Notebook Computer, Intel Pentium Quad-Core N5000 (up to 2.7 GHz), 8GB DDR4, 1TB HDD, Bluetooth, Wi-Fi, HDMI </p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-right" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-hp6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">WiFi| Bluetooth| Webcam| Windows 10</h5>
+                            <h6><strong>Price:</strong>$308.99</h6>
+                            <p class="card-text">HP 14" HD AMD Ryzen 3 3.5GHz 4GB 128GB SSD Radeon Vega 3 Webcam Windows 10 Laptop</p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--HP section end-->
+
+    <!--dell section start-->
+    <div class="col-12 sec-btn">
+        <button type="button" class="btn btn-dark"><span class="btn-text">DELL</span></button>
+    </div>
+
+    <section class="col-12 dell-section">
+
+        <div class="container">
+            <div class="row">
+                <div data-aos="flip-left" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-dell1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">2020_Dell Inspiron 14</h5>
+                            <h6><strong>Price:</strong>$499.00</h6>
+                            <p class="card-text">Laptop, 10th Gen Intel Quad-Core i5-1035G4, 8GB DDR4 RAM, 128GB SSD, WiFi+ Bluetooth, HDMI </p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-dell2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dell Inspiron 15.6 Inch</h5>
+                            <h6><strong>Price:</strong>$534.94</h6>
+                            <p class="card-text">HD Touchscreen Flagship High Performance Laptop PC | Intel Core i5-7200U | 8GB Ram | 256GB SSD</p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-right" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-dell3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dell Inspiron 15 5593</h5>
+                            <h6><strong>Price:</strong>$649.99</h6>
+                            <p class="card-text">10th Gen Core i5-1035G1, 256GB SSD, 8GB RAM, 15.6" Full HD Display, Backlit Keyboard, Windows 10 </p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-dell4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dell_Inspiron_3000</h5>
+                            <h6><strong>Price:</strong>$379.00</h6>
+                            <p class="card-text">14", Intel Pentium Silver N5000 CPU, 128GB SSD, 4GB RAM, HDMI, SD card Reader, Win10 Home S</p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-dell5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dell Inspiron 14 5481</h5>
+                            <h6><strong>Price:</strong>$390.00</h6>
+                            <p class="card-text">convertible Touchscreen Laptop 14 inch HD (1366 X 768) 8th Gen Intel Core i3-8145U, 4GB RAM</p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-right" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-dell6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dell Inspiron 15 5000</h5>
+                            <h6><strong>Price:</strong>$889.00</h6>
+                            <p class="card-text">15.6" Full HD FHD Touchscreen (1920x1080) Business Laptop (Intel Quad-Core i7-8550U, 16GB DDR4 RAM, 512GB SSD) </p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--DELL section end-->
+
+    <!--lenovo section start-->
+    <div class="col-12 sec-btn">
+        <button type="button" class="btn btn-dark"><span class="btn-text">Lenovo</span></button>
+    </div>
+    <section class="col-12 lenovo-section">
+        <div class="container">
+            <div class="row">
+                <div data-aos="flip-left" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-lenovo1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lenovo IdeaPad 15.6</h5>
+                            <h6><strong>Price:</strong>$329.00</h6>
+                            <p class="card-text">HD High Performance Laptop PC |7th Gen AMD A9-9425 Dual-Core 3.10 GHz| 4GB RAM | 128GB SSD</p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-lenovo2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lenovo IdeaPad 14-inch</h5>
+                            <h6><strong>Price:</strong>$420.00</h6>
+                            <p class="card-text">Dual-core AMD A6-9220e 1. 6GHz accelerated processor/ 4GB onboard RAM/ 64GB eMMC flash memory/ No DVD/CD </p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="flip-right" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-lenovo3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lenovo Ideapad 330</h5>
+                            <h6><strong>Price:</strong>$489.99</h6>
+                            <p class="card-text">Anti Glared HD Premium Business Laptop (AMD A9-9425 up to 3.7 GHz, 8GB DDR4, 256GB SSD</p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="flip-left" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-lenovo4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lenovo Chromebook S330</h5>
+                            <h6><strong>Price:</strong>$279.99</h6>
+                            <p class="card-text">14-Inch FHD (1920 x 1080) Display, MediaTek MT8173C Processor, 4GB LPDDR3, 64GB ,Chrome OS </p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-lenovo6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">IdeaPad 330S</h5>
+                            <h6><strong>Price:</strong>$355.00</h6>
+                            <p class="card-text">Newest 2019 Flagship Lenovo IdeaPad Laptop Intel Core i3 4GB </p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="flip-right" class="col-sm-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imges/laptop-imges/laptop-lenovo5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lenovo Flex 14</h5>
+                            <h6><strong>Price:</strong>$479.00</h6>
+                            <p class="card-text">Convertible Laptop, 14-Inch HD (1366 X 768) Touchscreen Display, Intel Pentium Gold 5405U, 4GB DDR4 </p>
+                            <a href="#" onclick="addcrat()" class="btn btn-primary">add to crat</a>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--lenovo section end-->
+
+    <!--footer section (feed back form)-->
+    <section class="col-12" id="footer">
+        <form>
+            <div class=" border-primary rounded-0">
+                <!--form header-->
+                <div class="card-header p-0">
+                    <div class="bg-info text-white text-center py-2">
+                        <h3><i class="fa fa-envelope"></i>CONTACT US</h3>
+                        <p class="m-0">TELL US YOUR FEED BACK
+                    </div>
+                </div>
+                <div class="card-body p-3">
+
+                    <!--Body-->
+                    <div class="form-group">
+                        <!--name-->
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Enter Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!--email-->
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                            </div>
+                            <input type="email" class="form-control" name="email" placeholder="example@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!--feed back-->
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                            </div>
+                            <textarea class="form-control" placeholder="Write your feed back" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <input type="submit" value="SEND" class="btn btn-info  rounded-0 py-2">
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 800,
+        });
+    </script>
+    <!--form section ends-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

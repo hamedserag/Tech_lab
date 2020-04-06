@@ -1,0 +1,75 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.slider-img {
+    height: 520px;
+}
+
+.btn-dark {
+    margin: 20px;
+    transition: all(1s);
+    width: 150px;
+    height: 50px;
+    padding: 1rem, 2rem;
+    margin-left: 50px;
+}
+
+.btn-text {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sec-btn {
+    background-color: darkturquoise;
+}
+
+.card {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: translatey(10px);
+    transition: 0.5s;
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.hp-img {}
+
+.hp-section {
+    background-image: url(imges/hp-brand.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.dell-section {
+    background-image: url(imges/dell-brand.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.lenovo-section {
+    background-image: url(imges/lenovo-brand.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#footer {
+    margin: 0px;
+    background-color: rgb(43, 43, 43);
+}
